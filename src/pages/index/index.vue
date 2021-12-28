@@ -1,50 +1,41 @@
 <template>
-	<view class="content">
-        <image class="logo" src="../../static/logo.png"></image>
-		<view>
-            <text class="title">{{title}}</text>
-        </view>
-	</view>
+ <div ref="myDiv">
+   <custom-test v-if="!isLoading"></custom-test>
+ </div>
 </template>
 
-<script lang="ts">
-    import Vue from 'vue';
-	export default Vue.extend({
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+<script>
+import Vue from 'vue'
 
-		},
-		methods: {
+export default {
+  name: "index",
+  data () {
+    return {
+      isLoading: true
+    }
+  },
+  methods: {
 
-		}
-	});
+  },
+  created() {
+    window.Vue = Vue // 将Vue 挂在到window 下 使得npm 包能install
+  },
+  mounted() {
+    setTimeout(() => { // 获取用户 自己的npm 组件库
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/invoker-uni@1.0.2'
+      document.body.appendChild(script)
+      script.onload = () => {
+        setTimeout(() => {
+          this.isLoading = false
+          console.dir(Vue)
+        }, 4000)
+      }
+    }, 1000)
+  }
+}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+<style scoped>
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>

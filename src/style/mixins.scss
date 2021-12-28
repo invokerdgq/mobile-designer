@@ -1,0 +1,48 @@
+/*全局混入*/
+
+/*flex-wrap*/
+@mixin no-flex-warp {
+  display: flex;
+  flex-direction: row;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@mixin flex-clo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*text-primary-style*/
+@mixin text-small-title {
+  font-size: $font-size-small-title;
+  font-weight: $font-weight-normal;
+  color: $color-font-main;
+}
+
+/*垂直水平居中*/
+@mixin all-center {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*水平居中*/
+@mixin align-center {
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%,0);
+}
+
+/*垂直居中*/
+@mixin vertical-center {
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0,-50%);
+}

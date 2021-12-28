@@ -49,6 +49,14 @@ process.UNI_LIBRARIES.forEach(libraryName => {
     }
   ])
 })
+
+plugins.push([
+    'component',
+  {
+    "libraryName": "element-ui",
+    "styleLibraryName": "theme-chalk"
+  }
+])
 module.exports = {
   presets: [
     [

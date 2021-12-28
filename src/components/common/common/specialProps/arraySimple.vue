@@ -1,0 +1,40 @@
+<template>
+  <el-form>
+    <el-form-item label="列表项绑定字段">
+      <el-select v-model="pageInfo.currentComponent.config.propsS[SPECIAL_KEY].key">
+        <el-option
+            v-for="item in keys"
+            :value="item.name"
+            :key="item.name"
+            :label="item.label"
+        ></el-option>
+      </el-select>
+    </el-form-item>
+  </el-form>
+</template>
+
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator'
+import { Getter } from 'vuex-class'
+
+@Component({})
+export default class ArraySimpleProps extends Vue {
+  @Getter('pageInfo') pageInfo!: any
+  @Prop() value!: any
+  @Prop() keyDec!: any
+  @Prop() SPECIAL_KEY!: string
+
+  get keys () {
+    if (this.pageInfo.currentComponent.dataset.type === 'extend') {
+      const com = this.pageInfo.components[this.pageInfo.currentComponent.dataset.extend.id]
+      return com.dataset[com.dataset.type].dimensionsAlias
+    }
+    return this.pageInfo.currentComponent.dataset[this.pageInfo.currentComponent.dataset.type].dimensionsAlias
+
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

@@ -1,0 +1,147 @@
+/*全局变量*/
+/*命名规范 属性-(css相关 可选[属性-状态])-sort-(属性值 可选)-secondSort*/
+
+/*color*/
+/*color-theme-blue*/
+$color-theme-blue: #467CF3;
+$color-theme-blue-normal: #467CF3;
+$color-theme-blue-deep: #276FFF;
+$color-theme-blue-deepest: #4566B4;
+$color-theme-blue-light: #B5CBFA;
+$color-theme-blue-lightest: #ECF3FF;
+/*color-theme-cyan*/
+$color-theme-cyan: #00CBBA;
+$color-theme-cyan-normal: #00DACA;
+$color-theme-cyan-deep: #00FBC4;
+$color-theme-cyan-deepest: #00AB9D;
+$color-theme-cyan-light: #B4F0E8;
+$color-theme-cyan-lightest: #E5FFFD;
+/*color-second-blue*/
+$color-second-blue:  #409EFF;
+$color-second-blue-normal: #409EFF;
+$color-second-blue-deep: #409EFF;
+$color-second-blue-deepest: #409EFF;
+$color-second-blue-light: #CCE4FF;
+$color-second-blue-lightest: #ECF5FF;
+/*color-second-green*/
+$color-second-green:  #30C602;
+$color-second-green-normal: #30C602;
+$color-second-green-deep: #30C602;
+$color-second-green-deepest: #30C602;
+$color-second-green-light: #D5EDCA;
+$color-second-green-lightest:  #EEFAEA;
+/*color-second-orange*/
+$color-second-orange:  #F49E13;
+$color-second-orange-normal: #F49E13;
+$color-second-orange-deep: #F49E13;
+$color-second-orange-deepest: #F49E13;
+$color-second-orange-light: #F5DAB0;
+$color-second-orange-lightest: #FEF6EB;
+/*color-second-red*/
+$color-second-red:  #FF5E67;
+$color-second-red-normal: #FF5E67;
+$color-second-red-deep: #FF5E67;
+$color-second-red-deepest: #FF5E67;
+$color-second-red-light: #FFE0E0;
+$color-second-red-lightest: #FFEEF0;
+/*color-second-gray*/
+$color-second-gray: #909399;
+$color-second-gray-normal: #909399;
+$color-second-gray-deep: #909399;
+$color-second-gray-deepest: #909399;
+$color-second-gray-light: #E0E0E1;
+$color-second-gray-lightest: #F6F7FA;
+
+/*font-color*/
+$color-font-main: #303133;
+$color-font-normal: #616266;
+$color-font-second: #909399;
+$color-font-last: #C0C4CC;
+
+/*border-color*/
+$color-border-main: #DBDFE6;
+$color-border-normal: #E3E7ED;
+$color-border-second: #EAEEF5;
+$color-border-last : #F2F6FC;
+
+/*line-color*/
+$color-line-main: #DBDFE6;
+$color-line-normal: #E3E7ED;
+$color-line-second: #EAEEF5;
+$color-line-last: #F2F6FC;
+
+/*input-disabled-bg*/
+$color-input-bg: $color-second-gray-lightest;
+
+/*scroll-bg*/
+$color-scroll-gray: #C8C9CC;
+
+/*nav-hover-color*/
+$color-nav-hover: $color-theme-cyan;
+
+/*icon background*/
+$color-iconBg-cyan: $color-theme-cyan;
+$color-iconBg-hover-cyan: $color-theme-cyan-normal;
+$color-iconBg-blue: $color-theme-blue;
+$color-iconBg-hover-blue: $color-theme-blue-normal;
+$color-iconBg-orange: $color-second-orange;
+$color-iconBg-hover-orange: #FBBD57;
+$color-iconBg-red: $color-second-red;
+$color-iconBg-hover-red: #FF8086;
+
+/*bg-color*/
+$gray-bg-main: #909399;
+$gray-bg-light: #E0E0E1;
+$gray-bg-light-second: #F6F7FA;
+
+/*font-size*/
+$font-size-title: 18px;
+$font-size-small-title: 16px;
+$font-size-normal: 14px;
+$font-size-small: 12px;
+
+/*icon-font-size*/
+$icon-font-size-large: 70px;
+$icon-font-size-main: 25px;
+$icon-font-size-normal: 20px;
+$icon-font-size-small: 16px;
+$icon-font-size-smaller: 14px;
+$icon-font-size-smallest: 12px;
+
+/*font-weight*/
+$font-weight-big-title: 600;
+$font-weight-title: 500;
+$font-weight-normal: 400;
+
+/*border-radius*/
+$border-radius: 4px;
+
+/*length*/
+$gap-largest: 20px;
+$gap-larger: 20px;
+$gap-large: 18px;
+$gap-default: 15px;
+$gap-small: 12px;
+$gap-smaller: 10px;
+$gap-smallest: 8px;
+$gap-mini: 4px;
+
+
+/*padding - margin*/
+$padding-large: $gap-larger;
+$padding-default: $gap-default;
+$padding-default-small: $gap-small;
+$padding-second: $gap-smaller;
+$padding-small: $gap-smallest;
+$margin-large: $gap-larger;
+$margin-default: $gap-default;
+$margin-default-small: $gap-small;
+$margin-second: $gap-smaller;
+$margin-small: $gap-smallest;
+
+/*nav-side-color*/
+$color-nav-left: #10202F;
+$color-nav-left-bg: #203449;
+
+/*el-tabs*/
+$color-tabs-main: $color-theme-cyan;

@@ -42,6 +42,12 @@
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
   },
   "dependencies": {
+    "@antv/g6": "^4.3.11",
+    "@codemirror/basic-setup": "^0.18.2",
+    "@codemirror/commands": "^0.18.3",
+    "@codemirror/lang-javascript": "^0.18.0",
+    "@codemirror/state": "^0.18.7",
+    "@codemirror/view": "^0.18.19",
     "@dcloudio/uni-app-plus": "^2.0.0-32920210927002",
     "@dcloudio/uni-h5": "^2.0.0-32920210927002",
     "@dcloudio/uni-helper-json": "*",
@@ -59,12 +65,20 @@
     "@dcloudio/uni-stat": "^2.0.0-32920210927002",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.15.6",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
+    "uni-ui": "^1.0.0",
+    "uview-ui": "^1.8.4",
+    "v-charts": "^1.19.0",
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
+    "vue-clipboard2": "^0.3.3",
+    "vue-codemirror": "^4.0.6",
     "vue-property-decorator": "^8.0.0",
-    "vuex": "^3.2.0"
+    "vuex": "^3.2.0",
+    "vuex-class": "^0.3.2"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.2.0",
@@ -83,6 +97,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "*",
     "@vue/cli-service": "~4.5.0",
+    "babel-plugin-component": "^1.1.1",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "jest": "^25.4.0",
@@ -90,7 +105,10 @@
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "typescript": "^3.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^7.3.1",
+    "scss-loader": "0.0.1"
   },
   "browserslist": [
     "Android >= 4.4",

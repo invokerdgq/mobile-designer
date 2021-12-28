@@ -1,0 +1,21 @@
+<template>
+  <el-row :gutter="10">
+    <el-col :span="6">静态值</el-col>
+    <el-col :span="18">
+      <el-switch v-model="info.eCfg.value"></el-switch>
+    </el-col>
+  </el-row>
+</template>
+
+<script lang="ts">
+import {Component, Prop, Vue} from 'vue-property-decorator'
+
+@Component({})
+export default class StaticBoolean extends Vue {
+  @Prop() info!: any
+}
+</script>
+
+<style scoped>
+
+</style>

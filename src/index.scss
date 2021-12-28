@@ -1,0 +1,212 @@
+$color-border: #409EFF;
+$color-parent-border: #ee8c8c;
+
+/*uView 样式修改*/
+/*u-input*/
+.u-input{
+  height: 100%;
+}
+.u-input__input{
+  min-height: 35px;
+  height: 100%;
+}
+/*u-form-item*/
+.u-form-item__body{
+  height: 100%;
+  width: 100%;
+}
+.u-form-item--right__content{
+  height: 100%;
+  width: 100%;
+}
+.u-form-item--right__content__slot{
+  height: 100%;
+  width: 100%;
+}
+.u-collapse-body{
+  height: auto;
+}
+
+.isSelected, .isSelectedParent {
+  border: solid 2px $color-border !important;
+  margin: -2px;
+  //font-size: 0;// 组件可能是Inline-block 出现间隔
+  //&>view:last-child{
+  // font-size: 14px;
+  //}
+  &:hover{
+    cursor: pointer;
+  }
+}
+.isSelectedParent{
+  border: solid 4rpx $color-parent-border !important;
+}
+view text{
+  //box-sizing: content-box;
+}
+.container-move {
+  &:hover{
+    cursor: move;
+  }
+}
+.delete-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background: #409EFF;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.hover-border-0 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  left: -4px;
+  top: calc(50% - 3px);
+  &:hover{
+    cursor: w-resize;
+  }
+}
+.hover-border-1 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  &:hover{
+    cursor: s-resize;
+  }
+}
+.hover-border-2 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  right: -4px;
+  top: calc(50% - 3px);
+  &:hover{
+    cursor: w-resize;
+  }
+}
+.hover-border-3 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  &:hover{
+    cursor: s-resize;
+  }
+}
+.hover-corner-0 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  &:hover{
+    cursor: se-resize;
+  }
+}
+.hover-corner-1 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  &:hover{
+    cursor: ne-resize;
+  }
+}
+.hover-corner-2 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  &:hover{
+    cursor: se-resize;
+  }
+}
+.hover-corner-3 {
+  width: 6px;
+  height: 6px;
+  background: $color-border;
+  position: absolute;
+  left: -4px;
+  bottom: -4px;
+  &:hover{
+    cursor: ne-resize;
+  }
+}
+.containerInner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  box-sizing: content-box;
+  opacity: 1;
+  top: -6px;
+  left: -6px;
+  z-index: 10
+}
+
+.SEARCH_HOVER:hover{
+  background-color: rgba(229, 77, 77, 0.3) !important;
+}
+.SELECT_HOVER{
+  background-color: rgba(229, 77, 77, 0.3) !important;
+}
+
+.com-container-normal::after{
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.first-line {
+  border: none;
+  margin: 0;
+  .hover-border-0{
+    display: none;
+  }
+  .hover-border-1{
+    display: none;
+  }
+  .hover-border-2{
+    display: none;
+  }
+  .hover-border-3{
+    display: none;
+  }
+  .hover-corner-0{
+    display: none;
+  }
+  .hover-corner-1{
+    display: none;
+  }
+  .hover-corner-2{
+    display: none;
+  }
+  .hover-corner-3{
+    display: none;
+  }
+}
+
+uni-app *::-webkit-scrollbar{
+  display: block;
+  width: 8px !important;
+  height: 0 !important;
+}
